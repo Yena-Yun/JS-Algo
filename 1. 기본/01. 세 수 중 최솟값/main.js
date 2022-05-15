@@ -7,4 +7,4 @@ function solution(a, b, c) {
   return min;
 }
 
-console.log(solution(3, 5, 2));
+console.log(solution(2, 5, 1));
