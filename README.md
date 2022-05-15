@@ -8,7 +8,7 @@
 문제 풀이 작성한 JS 코드 ~(강의와 똑같이 html의 script 태그에 작성)~ 
 <br/>
 
-code runner 확장 프로그램 사용하기 위해 js 파일에 작성
+(Code Runner 확장 프로그램 사용하기 위해 js 파일에 작성)
 
 
 ### 2) .md의 BEFORE
