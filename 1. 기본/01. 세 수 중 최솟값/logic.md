@@ -20,3 +20,14 @@ B가 C보다 작으면 최종 min은 B, 아니면 최종 min은 C
 </pre>
 
 # AFTER
+
+<pre>
+  A로 먼저 min을 초기화해놓고,
+  B가 min(A)보다 작으면 min을 B로 교체, 아니면 min은 그대로 A
+
+  이후 C를 min과 비교해서 min이 A든 B든 상관없이 C가 min보다 더 작다면 min을 C로 교체
+
+  여기까지 하고 나면 min에는 A, B, C 세 개 중 가장 작은 값이 담겨 있다.
+  => answer 출력
+
+</pre>
