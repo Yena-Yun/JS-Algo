@@ -1,32 +1,14 @@
 function solution(arr) {
-  let answer = [];
-  let sum = 0;
-  let firstIndex;
-  let secondIndex;
+  let answer = arr;
+  let sum = answer.reduce((acc, cur) => acc + cur, 0);
 
-  for (let x of arr) {
-    sum += x;
-  }
-
-  let extraSum = sum - 100;
-
-  for (let i = 0; i < arr.length - 1; i++) {
-    for (let j = i + 1; j < arr.length; j++) {
-      if (arr[i] + arr[j] === extraSum) {
-        firstIndex = arr.indexOf(arr[i]);
-        secondIndex = arr.indexOf(arr[j]);
-
-        console.log(firstIndex);
-        console.log(secondIndex);
+  for (let i = 0; i < answer.length - 1; i++) {
+    for (let j = i + 1; j < answer.length; j++) {
+      if (sum - (answer[i] + answer[j]) === 100) {
+        answer.splice(j, 1);
+        answer.splice(i, 1);
       }
     }
-  }
-
-  for (let x of arr) {
-    if (x === arr[firstIndex] || x === arr[secondIndex]) {
-      continue;
-    }
-    answer.push(x);
   }
 
   return answer;
