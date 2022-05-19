@@ -1,5 +1,5 @@
 function solution(s) {
-  return answer;
+  return (answer = s.replace(/A/g, '#'));
 }
 
 let str = 'BANANA';
