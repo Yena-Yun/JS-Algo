@@ -1,5 +1,14 @@
 function solution(s, t) {
-  return answer;
+  let answer = [];
+
+  if (s.length < 100) {
+    for (let x of s) {
+      if (x === t) answer.push(x);
+    }
+    return answer.length;
+  }
+
+  return;
 }
 
 let str = 'COMPUTERPROGRAMMING';
