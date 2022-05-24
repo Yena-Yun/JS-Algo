@@ -1,5 +1,5 @@
 function solution(s) {
-  return answer;
+  return s.toUpperCase();
 }
 
 let str = 'ItisTimeToStudy';
