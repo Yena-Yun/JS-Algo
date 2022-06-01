@@ -4,5 +4,5 @@ function solution(s) {
   return answer;
 }
 
-let str = 'goooG';
+let str = 'KKHSSSSSSSE';
 console.log(solution(str));

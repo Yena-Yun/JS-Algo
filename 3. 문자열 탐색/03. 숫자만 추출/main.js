@@ -1,8 +1,8 @@
-function solution(s) {
+function solution(str) {
   let answer;
 
   return answer;
 }
 
-let str = 'goooG';
+let str = 'g0en2T0s8eSoft';
 console.log(solution(str));
