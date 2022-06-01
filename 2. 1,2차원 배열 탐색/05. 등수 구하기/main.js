@@ -4,7 +4,7 @@ function solution(arr) {
 
   for (let i = 0; i < n; i++) {
     for (let j = 0; j < n; j++) {
-      if (arr[i] > arr[j]) answer[j]++;
+      if (arr[j] > arr[i]) answer[i]++;
     }
   }
 
