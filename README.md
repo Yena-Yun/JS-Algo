@@ -18,10 +18,8 @@
 ## 🥝 참고
 자바스크립트에서 안전하게 가장 작은 수 또는 가장 큰 수를 표현하는 법 <BR/>
 (최소값, 최대값 초기화에 사용)
-#### 가장 큰 수 
-**Number.MAX_SAFE_INTEGER**  <BR/>
-#### 가장 작은 수 
-**Number.MIN_SAFE_INTEGER**
+> #### 가장 큰 수: **Number.MAX_SAFE_INTEGER** 
+> #### 가장 작은 수: **Number.MIN_SAFE_INTEGER**
 
 
 ## 🎖 진행 정도
