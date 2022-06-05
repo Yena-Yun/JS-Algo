@@ -5,7 +5,8 @@
 
 ## 🎯 폴더별 구성
 ### 1) main.js
-문제풀이를 작성한 JS 코드 (VScode의 Code Runner 확장 프로그램으로 코드 결과 확인)
+문제풀이를 작성한 JS 코드 <BR/>
+(vscode의 Code Runner 확장 프로그램으로 코드 결과 확인)
 
 ### 2) logic.md
 #### * BEFORE <br/>
