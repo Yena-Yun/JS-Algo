@@ -6,7 +6,9 @@
 ## 🎯 폴더별 구성
 ### 1) main.js
 문제풀이를 작성한 JS 코드 <BR/>
-(vscode의 Code Runner 확장 프로그램으로 코드 결과 확인)
+Code Runner(vscode의 확장 프로그램)으로 코드 결과 확인
+* 단축키: Ctrl + Alt + N
+* 주의사항: 반드시 .js 파일 안에 마우스 커서를 두고 단축키를 눌러야 제대로 실행됨
 
 ### 2) logic.md
 #### * BEFORE <br/>
