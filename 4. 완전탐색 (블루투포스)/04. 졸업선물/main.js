@@ -1,5 +1,25 @@
 function solution(m, product) {
-  let answer = 0;
+  let answer = Number.MIN_SAFE_INTEGER;
+  let sum = 0;
+  let maxPrice = Number.MIN_SAFE_INTEGER;
+  let cnt = 0;
+
+  for (let i = 0; i < product.length; i++) {
+    let price = arr[i][0];
+    if (price > maxPrice) {
+      if (maxPrice > 0) sum -= maxPrice * 0.5;
+      maxPrice = price;
+      price = price * 0.5;
+    }
+    sum += price + arr[i][1];
+    console.log(sum);
+    if (sum < m) {
+      cnt++;
+    } else {
+      answer = Math.max(answer, cnt);
+      cnt = 0;
+    }
+  }
 
   return answer;
 }
