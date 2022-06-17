@@ -11,6 +11,10 @@ function solution(m, arr) {
     }
 
     answer += rt - lt + 1;
+    // console.log(lt);
+    // console.log(rt);
+    // console.log(sum);
+    console.log(answer);
   }
 
   return answer;
