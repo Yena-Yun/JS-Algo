@@ -1,30 +1,30 @@
 // 1회차 풀이
-// function solution(k, arr) {
-//   let answer = 0;
-//   let lt = 0;
-//   let sum = 0;
-//   let max = Number.MIN_SAFE_INTEGER;
+function solution(k, arr) {
+  let answer = 0;
+  let lt = 0;
+  let sum = 0;
+  let max = Number.MIN_SAFE_INTEGER;
 
-//   for (let rt = 0; rt < arr.length; rt++) {
-//     sum += arr[rt];
-//     console.log(sum);
+  for (let rt = 0; rt < arr.length; rt++) {
+    sum += arr[rt];
+    console.log(sum);
 
-//     if (rt === k - 1) {
-//       if (sum > max) max = sum;
-//       rt = lt;
-//       lt++;
-//       k++;
-//       sum = 0;
-//     }
-//   }
+    if (rt === k - 1) {
+      if (sum > max) max = sum;
+      rt = lt;
+      lt++;
+      k++;
+      sum = 0;
+    }
+  }
 
-//   answer = max;
+  answer = max;
 
-//   return answer;
-// }
+  return answer;
+}
 
-// let a = [12, 15, 11, 20, 25, 10, 20, 19, 13, 15];
-// console.log(solution(3, a));
+let a = [12, 15, 11, 20, 25, 10, 20, 19, 13, 15];
+console.log(solution(3, a));
 
 // ---------------------------------------------------
 
