@@ -36,10 +36,10 @@ function solution(arr) {
     let idx = i;
 
     for (let j = i + 1; j < len; j++) {
-      if (arr[j] < arr[idx]) idx = j; // '위치'가 중요하므로 값은 굳이 저장할 필요가 없다
+      if (arr[j] < arr[idx]) idx = j; // '위치'가 중요하므로 요소 값은 굳이 저장할 필요가 없다
     }
 
-    // 자바스크립트의 [[], []] 문법을 이용하여 두 값을 한 번에 교환 가능
+    // 자바스크립트의 [[], []] 문법을 이용하여 두 값을 한 번에 교환
     [arr[i], arr[idx]] = [arr[idx], arr[i]];
   }
 
