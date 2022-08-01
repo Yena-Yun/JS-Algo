@@ -81,19 +81,17 @@ function solution(times) {
   let timeLine = []; // 존재하고 있는 사람 ([시작시간, 끝시간]으로 나타냄)
 
   for (let x of times) {
-    timeLine.push([x[0], 's']);
+    timeLine.push([x[0], 's']); // 꼭 배열 대괄호로 감싸줘야 하위 배열이 만들어진다.
     timeLine.push([x[1], 'e']);
   }
 
   timeLine.sort((a, b) => {
-    if (a[0] === b[0]) {
-      return a[1].charCodeAt() - b[1].charCodeAt();
-    } else return a[0] - b[0];
+    if (a[0] === b[0]) return a[1].charCodeAt() - b[1].charCodeAt();
+    else return a[0] - b[0];
   });
 
-  console.log(timeLine);
-
   let cnt = 0;
+
   for (let x of timeLine) {
     if (x[1] === 's') cnt++;
     else cnt--;
