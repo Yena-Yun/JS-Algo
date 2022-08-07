@@ -17,7 +17,7 @@ function count(songs, capacity) {
 function solution(m, songs) {
   let answer = 0;
   let lt = Math.max(...songs); // songs 중 최대값 =  9
-  let rt = songs.reduce((acc, cur) => acc + cur, 0); // songs 전체 합 = 45
+  let rt = songs.reduce((a, b) => a + b, 0); // songs 전체 합 = 45
 
   while (lt <= rt) {
     let mid = parseInt((lt + rt) / 2);
@@ -33,5 +33,5 @@ function solution(m, songs) {
   return answer;
 }
 
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 console.log(solution(3, arr));
