@@ -1,16 +1,6 @@
-// 내가 짠 코드
 function solution(n) {
-  function DFS(L) {
-    for (let i = 0; i < L; i++) console.log(i + 1);
-  }
-
-  DFS(n);
-}
-
-solution(3);
-
-// 답 코드 방향
-function solution(n) {
+  // 깊이 우선 탐색은 트리 모양의 자료 구조를 탐색한다.
+  // 트리의 각 단계를 Level(L)이라고 한다.
   function DFS(L) {
     if (L === 0) return;
     else {
