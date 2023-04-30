@@ -5,7 +5,7 @@
 
 [알고리즘 개념 정리](https://www.notion.so/cheryl-yena-yun/aa2c2ad2f2974ed7b7c9ae27761451a9)
 
-## 🎯 폴더별 구성
+## 🛍 파일 구성
 ### 1) main.js
 문제풀이를 작성한 JS 코드 <BR/>
 => Code Runner extension으로 결과 확인 (Ctrl + Alt + N)
